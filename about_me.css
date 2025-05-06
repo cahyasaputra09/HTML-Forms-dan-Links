@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset dan Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #cfd9df, #e2ebf0);
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2980b9;
+  text-align: center;
+}
+
+/* Konten Utama */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+/* Kartu Konten */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 480px;
+  width: 100%;
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 26px;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+/* Paragraf */
+.about-text {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+/* Tombol */
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #2980b9;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #1c5980;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px 0;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #7f8c8d;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 500px) {
+  .card {
+    padding: 24px 18px;
+  }
+
+  .card h1 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

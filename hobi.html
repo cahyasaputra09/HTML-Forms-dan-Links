@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobi Saya</title>
+  <link rel="stylesheet" href="hobi.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Website</div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Pilih Hobi Anda</h1>
+      <form class="hobby-form">
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="hobi" value="MENULIS"> MENULIS</label>
+          <label><input type="checkbox" name="hobi" value="Melukis"> Melukis</label>
+          <label><input type="checkbox" name="hobi" value="Traveling"> Traveling</label>
+          <label><input type="checkbox" name="hobi" value="Berkebun">Berkebun</label>
+          <label><input type="checkbox" name="hobi" value="Voli"> Bermain voli</label>
+        </div>
+        <button type="submit" class="button">Kirim</button>
+      </form>
+      <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+    </div>
+  </main>
+
+  <footer>
+    Website Ibnaty
+  </footer>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">✅ Hobi berhasil dipilih</div>
+
+  <script>
+    const form = document.querySelector('.hobby-form');
+    const popup = document.getElementById('popup');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); 
+      popup.classList.add('show');
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
